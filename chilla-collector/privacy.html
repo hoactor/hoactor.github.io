@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>chilla-collector 개인정보처리방침</title>
+<style>
+  body { font: 16px/1.7 -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; max-width: 680px; margin: 48px auto; padding: 0 20px; color: #222; }
+  h1 { font-size: 1.5em; margin-bottom: .2em; }
+  .sub { color: #666; margin-top: 0; }
+  h2 { font-size: 1.1em; margin-top: 2em; }
+  table { border-collapse: collapse; width: 100%; font-size: .95em; }
+  th, td { border: 1px solid #ddd; padding: 6px 8px; text-align: left; vertical-align: top; }
+  th { background: #f6f6f6; }
+  a { color: #0b57d0; }
+  nav { font-size: .9em; color: #666; margin-bottom: 2em; }
+  footer { margin-top: 3em; font-size: .9em; color: #777; }
+</style>
+</head>
+<body>
+<nav><a href="./">소개</a> · <a href="terms.html">이용약관</a> · 개인정보처리방침</nav>
+<h1>chilla-collector 개인정보처리방침</h1>
+<p class="sub">시행일: 2026년 11월 7일 · 개정일: 2026년 11월 8일 (Instagram·TikTok 추가)</p>
+
+<p>chilla-collector(이하 "이 도구")는 채널 「우왕좌왕 최칠라」의 운영자(이하 "운영자")가 자기 계정의 통계를 자기 스프레드시트에 기록하기 위해 만든 비공개 도구입니다. 이 방침은 이 도구가 각 플랫폼의 공식 API로 어떤 정보를 읽고, 어디에 저장하며, 어떻게 삭제하는지를 설명합니다.</p>
+
+<h2>1. 수집하는 정보</h2>
+<p>운영자 본인이 승인한 계정에 대해서만, 각 플랫폼의 공식 API로 다음 정보를 읽습니다.</p>
+<h3>YouTube</h3>
+<ul>
+  <li>채널 정보: 채널 ID, 채널 이름, 구독자 수, 총 조회수, 영상 수</li>
+  <li>영상 정보: 영상 ID, 제목, 길이, 공개 상태, 예약·공개 시각, 조회수·좋아요 수·댓글 수</li>
+  <li>YouTube Analytics 집계 지표: 일별 조회수, 시청 시간, 평균 시청 지속 시간, 유입 경로, 구간별 시청 지속률 등</li>
+</ul>
+<h3>Instagram</h3>
+<ul>
+  <li>계정 정보: 사용자 ID, 사용자 이름, 계정 유형, 팔로워 수, 팔로잉 수, 게시물 수</li>
+  <li>게시물 정보: 미디어 ID, 유형, 캡션 앞부분, 링크, 게시 시각, 좋아요 수, 댓글 수</li>
+  <li>인사이트 집계 지표: 게시물·릴스별 조회수, 도달, 저장, 공유, 상호작용 수, 릴스 평균·총 시청 시간, 계정의 일별 도달·조회·프로필 방문 수</li>
+</ul>
+<h3>TikTok</h3>
+<ul>
+  <li>계정 정보: open_id, 표시 이름, 사용자 이름, 팔로워 수, 팔로잉 수, 좋아요 수, 영상 수</li>
+  <li>영상 정보: 영상 ID, 제목, 설명 앞부분, 링크, 길이, 게시 시각, 조회수·좋아요 수·댓글 수·공유 수</li>
+</ul>
+<p>어느 플랫폼에서도 시청자·팔로워 개인을 식별하는 정보(개별 팔로워 목록, 댓글 작성자 정보, 메시지 등)는 읽지 않습니다. 인사이트·분석 값은 모두 플랫폼이 제공하는 집계 수치입니다.</p>
+
+<h2>2. 이용 목적</h2>
+<p>운영자 본인이 자기 게시물의 성과를 기록하고 다음 콘텐츠 제작에 참고하기 위해서만 사용합니다. 광고, 마케팅, 프로파일링, 다른 서비스 제공에 사용하지 않습니다.</p>
+
+<h2>3. 저장 위치와 보관</h2>
+<ul>
+  <li>수집한 정보는 운영자 본인의 Google 스프레드시트에만 저장됩니다. 별도 서버나 데이터베이스는 없습니다.</li>
+  <li>승인 토큰(YouTube 갱신 토큰, Instagram 액세스 토큰, TikTok 액세스·갱신 토큰)은 해당 스프레드시트에 연결된 Google Apps Script의 스크립트 속성에만 저장되며, 스프레드시트 본문, 소스 코드 저장소, 외부 서버에 기록하지 않습니다.</li>
+  <li>TikTok 액세스 토큰은 Apps Script 캐시에 최대 24시간만 보관됩니다.</li>
+  <li>수집한 통계는 운영자가 연결을 해제하거나 삭제하기 전까지 보관합니다.</li>
+</ul>
+
+<h2>4. 제3자 제공</h2>
+<p>수집한 정보를 판매하거나 제3자에게 제공하지 않습니다. 운영자 외에는 스프레드시트에 접근할 수 없습니다.</p>
+
+<h2>5. 접근 철회와 데이터 삭제</h2>
+<p>운영자는 언제든 아래 방법으로 접근 권한을 철회하고 데이터를 삭제할 수 있습니다.</p>
+<table>
+<tr><th>플랫폼</th><th>접근 권한 철회</th><th>저장된 데이터·토큰 삭제</th></tr>
+<tr><td>YouTube</td><td>Google 계정의 <a href="https://myaccount.google.com/connections">서드 파티 연결</a> 화면에서 chilla-collector 제거</td><td>도구의 「연결 해제·수집 데이터 삭제」 실행</td></tr>
+<tr><td>Instagram</td><td>Instagram 앱 설정 → 앱 및 웹사이트에서 제거</td><td>도구의 Instagram 연결 해제 기능 실행</td></tr>
+<tr><td>TikTok</td><td>TikTok 앱 설정 → 보안 및 권한 → 앱 권한 관리에서 제거</td><td>도구의 TikTok 연결 해제 기능 실행(토큰 철회 요청 포함)</td></tr>
+</table>
+<p>연결 해제 기능은 해당 플랫폼의 정기 수집을 멈추고, 저장된 토큰과 API에서 받은 통계를 삭제합니다. 운영자가 직접 적어 둔 메모(에피소드 번호, 제작 메모 등)는 운영자 본인의 기록이므로 남습니다.</p>
+
+<h2>6. 플랫폼별 정책 준수</h2>
+<ul>
+  <li>Google API로 받은 정보의 사용과 전송은 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>(제한적 사용 요건 포함)을 따릅니다. YouTube API 서비스 이용 시 <a href="https://www.youtube.com/t/terms">YouTube 서비스 약관</a>과 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>이 함께 적용됩니다.</li>
+  <li>Instagram API 이용은 <a href="https://developers.facebook.com/terms/">Meta 플랫폼 약관</a>과 <a href="https://developers.facebook.com/devpolicy/">개발자 정책</a>을 따릅니다.</li>
+  <li>TikTok API 이용은 <a href="https://developers.tiktok.com/terms-of-service">TikTok 개발자 서비스 약관</a>을 따릅니다. 이 도구는 TikTok 콘텐츠를 저장하거나 재배포하지 않고 통계 수치만 기록합니다.</li>
+</ul>
+
+<h2>7. 변경</h2>
+<p>이 방침이 바뀌면 이 페이지에 개정일과 함께 게시합니다.</p>
+
+<footer>chilla-collector · 2026-11 · 이 도구는 YouTube, Instagram(Meta), TikTok과 제휴·보증 관계가 없습니다.</footer>
+</body>
+</html>
